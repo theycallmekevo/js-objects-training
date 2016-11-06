@@ -1,3 +1,6 @@
+## Training Reflection
+These challenges were tough and I had to look up the solutions. Unfortunately I didn't get through them all and will have to make another pass. However, reverse engineering the solutions and looking up all the different methods and documentation is really helpful. I'm realizing the immense value of reading through all the documentation and doing the exercises as it really helps solidify the material. I'm sure if I keep reading the docs - I'll be able to take on these challenges no problem! 
+
 # <img src="https://cloud.githubusercontent.com/assets/7833470/10899314/63829980-8188-11e5-8cdd-4ded5bcb6e36.png" height="60"> Javascript Objects - Problem Set
 
 * Please **Fork & Clone** this repo.

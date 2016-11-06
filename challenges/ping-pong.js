@@ -38,3 +38,21 @@
 */
 
 // YOUR CODE HERE
+var table = [{steps: 0}, null, null, null];
+function pingPong(table) {
+  var objectIndex = table.findIndex(function(el) {     // array.findIndex returns the index no# of the element that satifies the function
+    return !!el;                                       //NEED TO COME BACK AND REVERSE ENGINEER THIS SOLUTION (READ THE DOCS!)
+  });
+  var object = table[objectIndex];
+  // Move right when the step count is evenly divisible by the (table length - 1)
+  if (Math.floor(object.steps/(table.length-1)) % 2 === 0) {
+    // moving right
+    table[objectIndex + 1] = object;
+  } else {
+    // moving left
+    table[objectIndex - 1] = object;
+  }
+  object.steps += 1;
+  table[objectIndex] = null;
+  return table;
+}

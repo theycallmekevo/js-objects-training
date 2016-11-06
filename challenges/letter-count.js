@@ -31,3 +31,17 @@
 */
 
 // YOUR CODE HERE
+function letterCount(string) {
+  var solution = {};                          //set solution to an object {}
+  var stringToArray = string.split("");       //string.split takes a string and splits it into an array, store in a variable
+  stringToArray.forEach(function(letter) {    //array.forEach runs a function on each element in the array, passing the element as a parameter
+    if (solution[letter]) {                   //if the solution array iterates the same letter/ element it will add 1 to the solution variable
+      solution[letter] += 1;
+    } else {                                  //by default each solution element is equal to 1
+      solution[letter] = 1;
+    }
+  });
+  // console.log(solution)                
+  return solution;
+}
+letterCount('kevinn');
